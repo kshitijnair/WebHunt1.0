@@ -1,2 +1,3 @@
 # WebHunt 1.0
-A online treasure hunt of sorts developed and deployed for a tech fest event.
+An online treasure hunt of sorts developed and deployed for university's tech fest event.
+
