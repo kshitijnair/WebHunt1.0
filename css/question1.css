@@ -1,0 +1,32 @@
+.image{
+    height: 80%;
+    width: 80%;
+    background: #424242;
+    margin: auto;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+body{
+    background-color: #212121;
+}
+
+h2{
+    color: #efefef;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 10px;
+}
+
+#answertext {
+    color: #efefef;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Muli', sans-serif;
+    padding-top: 20px;
+}
+
+#inputgroup{
+    width: 500px;
+}

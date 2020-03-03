@@ -1,0 +1,12 @@
+.jumbotron {
+  width: 40vw;
+  padding: 1rem 0 0.5px 1rem !important;
+  margin: 1rem 0 1rem 13rem;
+  background-color: ef9a9a !important;
+  border-radius: 15px;
+}
+
+.spanLevel {
+  display: block;
+  font-size: 15px;
+}

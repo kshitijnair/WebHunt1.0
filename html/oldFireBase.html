@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head onload="logout()">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login Here!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
+    />
+    <link type="text/css" rel="stylesheet" href="cssText.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light" id="navbar1">
+      <a class="navbar-brand" href="#">
+        <img
+          src="worldwide.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        WebHunt 404!
+      </a>
+      <button
+        class="btn btn-danger my-2 my-sm-0"
+        type="submit"
+        id="log-out"
+        onclick="logout()"
+      >
+        Logout
+      </button>
+    </nav>
+    <br /><br /><br /><br />
+    <div class="container">
+      <div class="jumbotron">
+        <h1 style="color: #424242; font-size: 30px;">Login to WebHunt404!</h1>
+        <p>If not you, then who?</p>
+        <br />
+
+        <label for="email">UID</label>
+        <input
+          type="email"
+          class="form-control"
+          id="logemail"
+          aria-describedby="emailHelp"
+          placeholder="Enter email here"
+        />
+        <small id="emailHelp" class="form-text text-muted" id="smallteam"
+          >Enter your UID here.</small
+        >
+        <br />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="logpassword"
+          placeholder="Password"
+        /><br />
+        <button class="btn btn-info" id="submit" onclick="login()">
+          Login
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src=" https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: 'AIzaSyBWMC5Mj-xkmJEOxeTOypg3gQqebhFSL8I',
+      authDomain: 'demoweb2-8298e.firebaseapp.com',
+      databaseURL: 'https://demoweb2-8298e.firebaseio.com',
+      projectId: 'demoweb2-8298e',
+      storageBucket: 'demoweb2-8298e.appspot.com',
+      messagingSenderId: '1098007786878'
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="jscript2.js"></script>
+</html>

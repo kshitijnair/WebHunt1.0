@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WHLevel 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar1">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../images/worldwide.png.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        WebHunt 404!
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" onclick="redirectGame()"
+              >Game <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" onclick="redirectLB()" style="cursor: pointer"
+              >LeaderBoard</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button
+        class="btn btn-danger my-2 my-sm-0"
+        type="submit"
+        id="log-out"
+        onclick="logout()"
+      >
+        Logout
+      </button>
+    </nav>
+
+    <div class="container">
+      <h1>LeaderBoard</h1>
+      <br />
+    </div>
+
+    <div class="container"></div>
+  </body>
+  <script src="/js/lodash.js"></script>
+  <script src="/js/leaderboard.js"></script>
+</html>

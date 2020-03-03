@@ -1,0 +1,14 @@
++ .form-control {
+  margin: auto;
+  width: 400px;
+}
+
+.container {
+  margin: auto;
+  width: 490px;
+}
+
+.jumbotron {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+}

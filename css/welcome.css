@@ -1,0 +1,10 @@
+.container{
+    margin: auto;
+    width: 1000px;
+    
+}
+
+.jumbotron {
+    background-color: #eceff1;
+    border-radius: 50px;
+}

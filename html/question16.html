@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Level 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <link type="text/css" rel="stylesheet" href="../css/question1.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar1">
+      <a class="navbar-brand">
+        <img
+          src="../images/worldwide.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        WebHunt 404!
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link">Game <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="redirectLB()">LeaderBoard</a>
+          </li>
+          <div
+            class="nav-link"
+            id="navbar-timer"
+            style="font-size: 18px;
+            color: black;
+          margin: auto;"
+          >
+            00:00:00
+          </div>
+        </ul>
+      </div>
+      <button
+        class="btn btn-danger my-2 my-sm-0"
+        type="submit"
+        id="log-out"
+        onclick="logout()"
+      >
+        Logout
+      </button>
+    </nav>
+    <br />
+    <div class="container">
+      <h2>Level 1:</h2>
+      <h4 id="timerText" style="color: white;"></h4>
+      <img src="../images/question16.JPG" class="image" /><br />
+      <label id="answertext">Answer</label>
+      <div class="input-group mb-3" id="inputgroup">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter answer here"
+          aria-describedby="button-addon2"
+          id="answerBox"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            id="button-addon2"
+            onclick="checkAns()"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/question4.js"></script>
+</html>
